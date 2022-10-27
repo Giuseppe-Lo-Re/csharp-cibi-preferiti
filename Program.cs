@@ -2,6 +2,7 @@
 
 // Create un progetto App Console csharp-cibi-preferiti con VS2022.
 using System;
+using System.Net.Http.Headers;
 
 // Nel programma inizializzate un array con la classifica dei vostri cibi preferiti (minimo 5, massimo 10 elementi).
 // L’array deve essere già inizializzato nel programma, e i vostri cibi preferiti non vanno chiesti all’utente tramite input.
@@ -94,13 +95,30 @@ using System;
 // Il software deve chiedere per 10 volte all’utente di inserire un numero.
 // Il programma stampa la somma di tutti i numeri inseriti.
 
-int Somma = 0;
-for(int i = 0; i < 10; i++)
+//int somma = 0;
+//for(int i = 0; i < 10; i++)
+//{
+//    Console.WriteLine("inserisci un numero");
+//    int numeroDaSommare = Convert.ToInt32(Console.ReadLine());
+//    Somma += numeroDaSommare;
+//}
+
+//Console.WriteLine("la somma dei numeri è: {0}", Somma);
+
+//Snack4.
+//Calcola la somma e la media dei numeri da 2 a 10
+
+
+int quantitaNumeri = 0;
+int somma = 0;
+
+for(int i = 2; i < 11; i++)
 {
-    Console.WriteLine("inserisci un numero");
-    int numeroDaSommare = Convert.ToInt32(Console.ReadLine());
-    Somma += numeroDaSommare;
+    quantitaNumeri++;
+    somma += i;
 }
 
-Console.WriteLine("la somma dei numeri è: {0}", Somma);
+Console.WriteLine("la somma dei numeri è: " + somma);
+Console.WriteLine("la media dei numeri è: " + somma / quantitaNumeri);
+
 
