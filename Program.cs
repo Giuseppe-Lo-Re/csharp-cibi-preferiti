@@ -125,17 +125,46 @@ using System.Net.Http.Headers;
 // Il software chiede all’utente di inserire un numero. Se il numero inserito è pari,
 // stampa il numero, se è dispari, stampa il numero successivo
 
-Console.WriteLine("inserisci un numero");
-int numero = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("inserisci un numero");
+// int numero = Convert.ToInt32(Console.ReadLine());
 
-if (numero % 2 == 0)
+// if (numero % 2 == 0)
+// {
+//     Console.WriteLine(numero);
+// }
+// else
+//{
+//     Console.WriteLine(numero + 1);
+//}
+
+// Snack6.
+// In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
+// Chiedi all'utente il suo nome e comunicagli se può partecipare o meno alla festa
+
+string[] invitati = { "Tizio", "Caio", "Sempronio" };
+
+Console.WriteLine("Qual'è il tuo nome?");
+string nomeUtente = Console.ReadLine();
+
+bool partecipa = false;
+
+for (int i = 0; i < invitati.Length; i++)
 {
-    Console.WriteLine(numero);
+    if (invitati[i].Equals(nomeUtente))
+    {
+        partecipa = true;
+    }
+}
+
+if (partecipa)
+{
+    Console.WriteLine("Accomodati pure, " + nomeUtente);
 }
 else
 {
-    Console.WriteLine(numero + 1);
+    Console.WriteLine("Mi dispiace, non sei stato invitato");
 }
+
 
 
 
