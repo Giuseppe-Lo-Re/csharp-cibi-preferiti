@@ -109,16 +109,33 @@ using System.Net.Http.Headers;
 //Calcola la somma e la media dei numeri da 2 a 10
 
 
-int quantitaNumeri = 0;
-int somma = 0;
+// int quantitaNumeri = 0;
+// int somma = 0;
 
-for(int i = 2; i < 11; i++)
+// for(int i = 2; i < 11; i++)
+// {
+//    quantitaNumeri++;
+//    somma += i;
+//}
+
+//Console.WriteLine("la somma dei numeri è: " + somma);
+//Console.WriteLine("la media dei numeri è: " + somma / quantitaNumeri);
+
+// Snack5.
+// Il software chiede all’utente di inserire un numero. Se il numero inserito è pari,
+// stampa il numero, se è dispari, stampa il numero successivo
+
+Console.WriteLine("inserisci un numero");
+int numero = Convert.ToInt32(Console.ReadLine());
+
+if (numero % 2 == 0)
 {
-    quantitaNumeri++;
-    somma += i;
+    Console.WriteLine(numero);
+}
+else
+{
+    Console.WriteLine(numero + 1);
 }
 
-Console.WriteLine("la somma dei numeri è: " + somma);
-Console.WriteLine("la media dei numeri è: " + somma / quantitaNumeri);
 
 
