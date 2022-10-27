@@ -169,19 +169,31 @@ using System.Net.Http.Headers;
 // Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero,
 // se è dispari inseriscilo nell’array
 
-int[] array = new int[6];
+//int[] array = new int[6];
 
-for(int i = 0; i < array.Length; i++)
+//for(int i = 0; i < array.Length; i++)
+//{
+//    Console.WriteLine("Inserisci un numero");
+//    int numeroUtente = Convert.ToInt16(Console.Read());
+
+//    if(numeroUtente % 2 == 1)
+//    {
+//        array[i] = numeroUtente;
+//    }
+//}
+
+//Snack8
+//Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
+
+int[] array = { 11, 22, 33, 44, 55 };
+int somma = 0;
+
+for(int i = 0; i < array.Length; i+= 2)
 {
-    Console.WriteLine("Inserisci un numero");
-    int numeroUtente = Convert.ToInt16(Console.Read());
-
-    if(numeroUtente % 2 == 1)
-    {
-        array[i] = numeroUtente;
-    }
+    somma += array[i];
 }
 
+Console.WriteLine("La somma dei numeri in posizione dispari è: {0}", somma);
 
 
 
