@@ -38,9 +38,21 @@ Console.WriteLine("Il mio cibo preferito top è: " + cibiPreferiti[0]);
 Console.WriteLine();
 
 // Stampo il mio cibo preferito ma non troppo
-Console.WriteLine("Il mio cibo preferito ma non troppo è: " + cibiPreferiti[4]);
+Console.WriteLine("Il mio cibo preferito ma non troppo è: " + (cibiPreferiti[cibiPreferiti.Length - 1]));
 
 Console.WriteLine();
 
 // Stampo il mio cibo preferito di mezza classifica
-Console.WriteLine("Il mio cibo preferito di mezza classifica è: " + (cibiPreferiti[cibiPreferiti.Length-1]));
+if(cibiPreferiti.Length % 2 == 0)
+{
+    // Pari
+    // int medianaSuperiore = cibiPreferiti.Length / 2;
+    // int medianaInferiore = medianaSuperiore - 1;
+;
+}
+else
+{
+    // Dispari
+    int mediana = cibiPreferiti.Length / 2;
+    Console.WriteLine("La mediana è: " + cibiPreferiti[mediana]);
+}
