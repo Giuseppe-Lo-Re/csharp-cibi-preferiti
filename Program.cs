@@ -15,44 +15,59 @@ using System;
 
 
 // Inizializzo la classifica
-string[] cibiPreferiti = { "Pizza" , "Pasta" , "Parmigiana" , "Patate" , "Zucca" };
+// string[] cibiPreferiti = { "Pizza" , "Pasta" , "Parmigiana" , "Patate" , "Zucca" };
 
 // Stampo la lunghezza della classifica
-Console.WriteLine("La lunghezza della classifica è: " + cibiPreferiti.Length);
+// Console.WriteLine("La lunghezza della classifica è: " + cibiPreferiti.Length);
 
-Console.WriteLine();
+// Console.WriteLine();
 
 // Stampo la classifica
-Console.WriteLine("La mia classifica è: ");
-for (int i = 0; i < cibiPreferiti.Length; i++)
-{
-    Console.Write(i + 1 + ")");
-    Console.WriteLine(cibiPreferiti[i]);
-}
+// Console.WriteLine("La mia classifica è: ");
+// for (int i = 0; i < cibiPreferiti.Length; i++)
+//{
+//    Console.Write(i + 1 + ")");
+//    Console.WriteLine(cibiPreferiti[i]);
+// }
 
-Console.WriteLine();
+// Console.WriteLine();
 
 // Stampo il mio cibo preferito top
-Console.WriteLine("Il mio cibo preferito top è: " + cibiPreferiti[0]);
+// Console.WriteLine("Il mio cibo preferito top è: " + cibiPreferiti[0]);
 
-Console.WriteLine();
+// Console.WriteLine();
 
-// Stampo il mio cibo preferito ma non troppo
-Console.WriteLine("Il mio cibo preferito ma non troppo è: " + (cibiPreferiti[cibiPreferiti.Length - 1]));
+// Console.WriteLine("Il mio cibo preferito ma non troppo è: " + (cibiPreferiti[cibiPreferiti.Length - 1]));
 
-Console.WriteLine();
+// Console.WriteLine();
 
 // Stampo il mio cibo preferito di mezza classifica
-if(cibiPreferiti.Length % 2 == 0)
+// if(cibiPreferiti.Length % 2 == 0)
+//{
+// Pari
+// int medianaSuperiore = cibiPreferiti.Length / 2;
+// int medianaInferiore = medianaSuperiore - 1;
+
+// }
+// else
+//{
+//    int mediana = cibiPreferiti.Length / 2;
+//    Console.WriteLine("La mediana è: " + cibiPreferiti[mediana]);
+//}
+
+// Snack1.
+// L’utente inserisce due numeri in successione.
+// Il software stampa il maggiore.
+
+Console.WriteLine("inserisci due numeri in successione");
+int primoNumero = Convert.ToInt32(Console.ReadLine());
+int secondoNumero = Convert.ToInt32(Console.ReadLine());
+
+if(primoNumero > secondoNumero)
 {
-    // Pari
-    // int medianaSuperiore = cibiPreferiti.Length / 2;
-    // int medianaInferiore = medianaSuperiore - 1;
-;
+    Console.WriteLine("Il numero maggiore dei due è: " + primoNumero);
 }
 else
 {
-    // Dispari
-    int mediana = cibiPreferiti.Length / 2;
-    Console.WriteLine("La mediana è: " + cibiPreferiti[mediana]);
+    Console.WriteLine("Il numero maggiore dei due è: " + secondoNumero);
 }
