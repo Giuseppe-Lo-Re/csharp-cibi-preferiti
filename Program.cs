@@ -77,15 +77,30 @@ using System;
 // L’utente inserisce due parole in successione.
 // Il software stampa prima la parola più corta, poi la parola più lunga
 
-Console.WriteLine("inserisci due parole in successione");
-string primaParola = Console.ReadLine(); 
-string secondaParola = Console.ReadLine();
+// Console.WriteLine("inserisci due parole in successione");
+// string primaParola = Console.ReadLine(); 
+// string secondaParola = Console.ReadLine();
 
-if(primaParola.Length > secondaParola.Length)
+// if(primaParola.Length > secondaParola.Length)
+// {
+//    Console.WriteLine("La parola più lunga è: " + primaParola);
+//}
+// else
+//{
+//    Console.WriteLine("La parola più lunga è: " + secondaParola);
+//}
+
+// Snack3.
+// Il software deve chiedere per 10 volte all’utente di inserire un numero.
+// Il programma stampa la somma di tutti i numeri inseriti.
+
+int Somma = 0;
+for(int i = 0; i < 10; i++)
 {
-    Console.WriteLine("La parola più lunga è: " + primaParola);
+    Console.WriteLine("inserisci un numero");
+    int numeroDaSommare = Convert.ToInt32(Console.ReadLine());
+    Somma += numeroDaSommare;
 }
-else
-{
-    Console.WriteLine("La parola più lunga è: " + secondaParola);
-}
+
+Console.WriteLine("la somma dei numeri è: {0}", Somma);
+
