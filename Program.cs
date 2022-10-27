@@ -59,15 +59,33 @@ using System;
 // L’utente inserisce due numeri in successione.
 // Il software stampa il maggiore.
 
-Console.WriteLine("inserisci due numeri in successione");
-int primoNumero = Convert.ToInt32(Console.ReadLine());
-int secondoNumero = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("inserisci due numeri in successione");
+// int primoNumero = Convert.ToInt32(Console.ReadLine());
+// int secondoNumero = Convert.ToInt32(Console.ReadLine());
 
-if(primoNumero > secondoNumero)
+// if(primoNumero > secondoNumero)
+//{
+//    Console.WriteLine("Il numero maggiore dei due è: " + primoNumero);
+//}
+// else
+//{
+//    Console.WriteLine("Il numero maggiore dei due è: " + secondoNumero);
+//}
+
+
+// Snack2.
+// L’utente inserisce due parole in successione.
+// Il software stampa prima la parola più corta, poi la parola più lunga
+
+Console.WriteLine("inserisci due parole in successione");
+string primaParola = Console.ReadLine(); 
+string secondaParola = Console.ReadLine();
+
+if(primaParola.Length > secondaParola.Length)
 {
-    Console.WriteLine("Il numero maggiore dei due è: " + primoNumero);
+    Console.WriteLine("La parola più lunga è: " + primaParola);
 }
 else
 {
-    Console.WriteLine("Il numero maggiore dei due è: " + secondoNumero);
+    Console.WriteLine("La parola più lunga è: " + secondaParola);
 }
