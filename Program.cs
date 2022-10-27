@@ -20,17 +20,27 @@ string[] cibiPreferiti = { "Pizza" , "Pasta" , "Parmigiana" , "Patate" , "Zucca"
 // Stampo la lunghezza della classifica
 Console.WriteLine("La lunghezza della classifica è: " + cibiPreferiti.Length);
 
+Console.WriteLine();
+
 // Stampo la classifica
-for(int i = 0; i < cibiPreferiti.Length; i++)
+Console.WriteLine("La mia classifica è: ");
+for (int i = 0; i < cibiPreferiti.Length; i++)
 {
+    Console.Write(i + 1 + ")");
     Console.WriteLine(cibiPreferiti[i]);
 }
+
+Console.WriteLine();
 
 // Stampo il mio cibo preferito top
 Console.WriteLine("Il mio cibo preferito top è: " + cibiPreferiti[0]);
 
+Console.WriteLine();
+
 // Stampo il mio cibo preferito ma non troppo
 Console.WriteLine("Il mio cibo preferito ma non troppo è: " + cibiPreferiti[4]);
 
+Console.WriteLine();
+
 // Stampo il mio cibo preferito di mezza classifica
-Console.WriteLine("Il mio cibo preferito di mezza classifica è: " + cibiPreferiti[2]);
+Console.WriteLine("Il mio cibo preferito di mezza classifica è: " + (cibiPreferiti[cibiPreferiti.Length-1]));
