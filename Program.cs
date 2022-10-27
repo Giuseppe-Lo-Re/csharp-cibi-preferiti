@@ -141,28 +141,45 @@ using System.Net.Http.Headers;
 // In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby.
 // Chiedi all'utente il suo nome e comunicagli se può partecipare o meno alla festa
 
-string[] invitati = { "Tizio", "Caio", "Sempronio" };
+//string[] invitati = { "Tizio", "Caio", "Sempronio" };
 
-Console.WriteLine("Qual'è il tuo nome?");
-string nomeUtente = Console.ReadLine();
+//Console.WriteLine("Qual'è il tuo nome?");
+// string nomeUtente = Console.ReadLine();
 
-bool partecipa = false;
+// bool partecipa = false;
 
-for (int i = 0; i < invitati.Length; i++)
+//for (int i = 0; i < invitati.Length; i++)
+//{
+//   if (invitati[i].Equals(nomeUtente))
+//   {
+//     partecipa = true;
+// }
+//}
+
+//if (partecipa)
+//{
+//   Console.WriteLine("Accomodati pure, " + nomeUtente);
+//}
+//else
+//{
+//  Console.WriteLine("Mi dispiace, non sei stato invitato");
+//}
+
+// Snack7.
+// Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero,
+// se è dispari inseriscilo nell’array
+
+int[] array = new int[6];
+
+for(int i = 0; i < array.Length; i++)
 {
-    if (invitati[i].Equals(nomeUtente))
+    Console.WriteLine("Inserisci un numero");
+    int numeroUtente = Convert.ToInt16(Console.Read());
+
+    if(numeroUtente % 2 == 1)
     {
-        partecipa = true;
+        array[i] = numeroUtente;
     }
-}
-
-if (partecipa)
-{
-    Console.WriteLine("Accomodati pure, " + nomeUtente);
-}
-else
-{
-    Console.WriteLine("Mi dispiace, non sei stato invitato");
 }
 
 
