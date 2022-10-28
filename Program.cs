@@ -83,11 +83,14 @@ using System.Net.Http.Headers;
 // string secondaParola = Console.ReadLine();
 
 // if(primaParola.Length > secondaParola.Length)
+
 // {
+//    Console.WriteLine("La parola più corta è: " + secondaParola);
 //    Console.WriteLine("La parola più lunga è: " + primaParola);
 //}
 // else
 //{
+//    Console.WriteLine("La parola più corta è: " + primaParola);
 //    Console.WriteLine("La parola più lunga è: " + secondaParola);
 //}
 
@@ -109,11 +112,11 @@ using System.Net.Http.Headers;
 //Calcola la somma e la media dei numeri da 2 a 10
 
 
-// int quantitaNumeri = 0;
-// int somma = 0;
+//int quantitaNumeri = 0;
+//int somma = 0;
 
-// for(int i = 2; i < 11; i++)
-// {
+//for (int i = 2; i < 11; i++)
+//{
 //    quantitaNumeri++;
 //    somma += i;
 //}
@@ -125,16 +128,16 @@ using System.Net.Http.Headers;
 // Il software chiede all’utente di inserire un numero. Se il numero inserito è pari,
 // stampa il numero, se è dispari, stampa il numero successivo
 
-// Console.WriteLine("inserisci un numero");
-// int numero = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("inserisci un numero");
+//int numero = Convert.ToInt32(Console.ReadLine());
 
-// if (numero % 2 == 0)
-// {
-//     Console.WriteLine(numero);
-// }
-// else
+//if (numero % 2 == 0)
 //{
-//     Console.WriteLine(numero + 1);
+//    Console.WriteLine(numero);
+//}
+//else
+//{
+//    Console.WriteLine(numero + 1);
 //}
 
 // Snack6.
@@ -144,25 +147,26 @@ using System.Net.Http.Headers;
 //string[] invitati = { "Tizio", "Caio", "Sempronio" };
 
 //Console.WriteLine("Qual'è il tuo nome?");
-// string nomeUtente = Console.ReadLine();
+//string nomeUtente = Console.ReadLine();
 
-// bool partecipa = false;
+//bool partecipa = false;
 
 //for (int i = 0; i < invitati.Length; i++)
 //{
-//   if (invitati[i].Equals(nomeUtente))
-//   {
-//     partecipa = true;
-// }
+//    if (invitati[i].Equals(nomeUtente))
+//    {
+//        partecipa = true;
+//        break;
+//    }
 //}
 
 //if (partecipa)
 //{
-//   Console.WriteLine("Accomodati pure, " + nomeUtente);
+//    Console.WriteLine("Accomodati pure, " + nomeUtente);
 //}
 //else
 //{
-//  Console.WriteLine("Mi dispiace, non sei stato invitato");
+//    Console.WriteLine("Mi dispiace, non sei stato invitato");
 //}
 
 // Snack7.
@@ -171,12 +175,12 @@ using System.Net.Http.Headers;
 
 //int[] array = new int[6];
 
-//for(int i = 0; i < array.Length; i++)
+//for (int i = 0; i < array.Length; i++)
 //{
 //    Console.WriteLine("Inserisci un numero");
 //    int numeroUtente = Convert.ToInt16(Console.Read());
 
-//    if(numeroUtente % 2 == 1)
+//    if (numeroUtente % 2 == 1)
 //    {
 //        array[i] = numeroUtente;
 //    }
@@ -185,15 +189,44 @@ using System.Net.Http.Headers;
 //Snack8
 //Crea un array di numeri interi e fai la somma di tutti gli elementi che sono in posizione dispari.
 
-int[] array = { 11, 22, 33, 44, 55 };
-int somma = 0;
+//int[] array = { 11, 22, 33, 44, 55 };
+//int somma = 0;
 
-for(int i = 0; i < array.Length; i+= 2)
+//for (int i = 1; i < array.Length; i += 2)
+//{
+//    somma += array[i];
+//}
+
+//Console.WriteLine("La somma dei numeri in posizione dispari è: {0}", somma);
+
+//Snack9
+//Crea un array vuoto e chiedi all’utente un numero da inserire nell’array.
+//Continua a chiedere i numeri all’utente e a inserirli nell’array, fino a quando la
+//somma degli elementi è minore di 50
+
+int[] array = new int[50];
+int somma = 0;
+int index = 0;
+
+
+while (somma < 50)
 {
-    somma += array[i];
+    Console.WriteLine("Inserisci un numero");
+    int numeroUtente = Convert.ToInt32(Console.Read());
+
+    if (numeroUtente > 0)
+    {
+        array[index] = numeroUtente;
+        somma += numeroUtente;
+        index++;
+    } else
+    {
+        Console.WriteLine("il numero deve essere maggiore di zero");
+    }
 }
 
-Console.WriteLine("La somma dei numeri in posizione dispari è: {0}", somma);
-
-
+//Snack10.
+//Fai inserire un numero, che chiameremo N, all’utente.
+//Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
+//Ogni volta che ne crei uno, stampalo a schermo.
 
