@@ -230,32 +230,79 @@ using System.Net.Http.Headers;
 //Genera N array, ognuno formato da 10 numeri casuali tra 1 e 100.
 //Ogni volta che ne crei uno, stampalo a schermo.
 
-Console.WriteLine("Snack 10");
-Console.WriteLine();
+//Console.WriteLine("Snack 10");
+//Console.WriteLine();
 
 
-Console.WriteLine("Quanti array creare?");
-int numeroN = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Quanti array creare?");
+//int numeroN = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 0; i < numeroN; i++)
-{
-    int[] arrayN = new int[10];
+//for (int i = 0; i < numeroN; i++)
+//{
+//    int[] arrayN = new int[10];
 
-    for (int j = 0; j < arrayN.Length; j++)
-    {
-        Random random = new Random();
-        arrayN[j] = random.Next(1, 101);
-    }
+//    for (int j = 0; j < arrayN.Length; j++)
+//    {
+//        Random random = new Random();
+//        arrayN[j] = random.Next(1, 101);
+//    }
 
-    for (int k = 0; k < arrayN.Length; k++)
-    {
-        if (k < arrayN.Length - 1)
-        {
-            Console.Write(arrayN[k] + " - ");
-        }
-        else
-        {
-            Console.Write(arrayN[k]);
-        }
-    }
-}
+//    for (int k = 0; k < arrayN.Length; k++)
+//    {
+//        if (k < arrayN.Length - 1)
+//        {
+//            Console.Write(arrayN[k] + " - ");
+//        }
+//        else
+//        {
+//            Console.Write(arrayN[k]);
+//        }
+//    }
+//}
+
+//Snack 1
+//Dare la possibilità di inserire due parole.
+//Verificare tramite una funzione che le due parole abbiano la stessa lunghezza. Se hanno la stessa lunghezza, stamparle entrambe, altrimenti stampare la più lunga delle due.
+
+//string ConfrontaParole(string parola1, string parola2)
+//{
+//        if(parola1.Length == parola2.Length)
+//        {
+//            return parola1 + " " + parola2;
+//        }
+//        else if(parola1.Length > parola2.Length)
+//        {
+//            return parola1;
+//        }
+//        else
+//        {
+//            return parola2;
+//        }
+//}
+
+//Console.WriteLine("inserisci due parole");
+//string primaParola = Console.ReadLine();
+//string secondaParola = Console.ReadLine();
+
+//Console.WriteLine(ConfrontaParole(primaParola, secondaParola));
+
+//Snack 2
+//Scrivere una funzione per verificare se un numero è pari o dispari.
+//Quindi chiedere un numero all’utente e comunicargli se è pari o dispari.
+
+//string PariODispari(int numero)
+//{
+//    if (numero % 2 == 0)
+//    {
+//        return "pari";
+//    }
+//    else
+//    {
+//        return "dispari";
+//    }
+//}
+
+//Console.WriteLine("inserisci un numero");
+//int numeroUtente = Convert.ToInt32(Console.ReadLine());
+
+//Console.WriteLine("il numero che hai inserito è " + PariODispari(numeroUtente));
